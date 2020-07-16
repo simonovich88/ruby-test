@@ -39,3 +39,26 @@ end
 
 
 buid_web_page(a)
+
+#nuevo metodo bonus
+
+b=body['photos'].map{|x| x['camera']['name']}
+
+
+
+def photos_count(camara)
+
+    new_hast ={}
+
+ 
+        new_hast['name']=camara
+
+
+    print new_hast
+
+
+  
+end 
+
+
+photos_count(b)
