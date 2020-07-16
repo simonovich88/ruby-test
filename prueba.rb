@@ -50,14 +50,27 @@ def photos_count(camara)
 
     new_hast ={}
 
- 
-        new_hast['name']=camara
+    array=[]
 
+    camara.each do |i|
+
+        array=  camara.group_by{|i| i}
+
+    end 
+
+
+    array.each do |k,v|
+
+   new_hast[k]=v.count
+
+   # puts "carama #{k} valor #{v.count}"
+    
+
+
+    end
 
     print new_hast
 
-
-  
 end 
 
 
